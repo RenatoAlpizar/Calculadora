@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Calculadora</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" href="CSS/CSS.css" rel="stylesheet"/>
+        <link href='https://fonts.googleapis.com/css?family=Michroma' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div id="contenido">
+            
+            <form onsubmit="return false;" method="GET">
+            <h1  id="titulo_calculadora" >Calculadora</h1>
+            <input type="text" id="resultado" disabled="disabled">
+            <table id="table">
+                <tr>              
+                <td>
+                    
+                    <button onclick="agregar_numero('7')">7</button>                  
+                    <button onclick="agregar_numero('8')">8</button>
+                    <button onclick="agregar_numero('9')">9</button> 
+                    <button onclick="tipoOperacion('/')">/</button>   
+                <td>
+                </tr>
+                
+                <br>
+                <td>
+                    <br>
+                    <button onclick="agregar_numero('4')">4</button>                   
+                    <button onclick="agregar_numero('5')">5</button> 
+                    <button onclick="agregar_numero('6')">6</button>
+                    <button onclick="tipoOperacion('*')">*</button>
+                </td>
+                <tr>
+                <br>
+                <td>
+                    <br>
+                    <button onclick="agregar_numero('1')">1</button>                   
+                    <button onclick="agregar_numero('2')">2</button> 
+                    <button onclick="agregar_numero('3')">3</button> 
+                    <button onclick="tipoOperacion('-')">-</button>
+                </td>
+                </tr>
+                <tr>
+                <br>
+                <td>
+                    <br>
+                    <button onclick="agregar_numero('0')" >0</button>                   
+                    <button onclick="agregar_numero('.')">.</button> 
+                    <button onclick="tipoOperacion('+')">+</button> 
+                   <button onclick="procesar()">=</button> 
+                </td>
+                    
+                </tr>
+                <tr>
+                <br>
+                    <td>  
+                    <br>
+                    <button  type="reset"">AC</button>
+                    <br>
+                    <br>
+
+                </td>  
+                </tr>
+            </table>           
+        </form>
+            
+        </div>
+    </body>
+    
+    <script type="text/javascript" 
+    src="javascript/script.js"></script> 
+    
+</html>
